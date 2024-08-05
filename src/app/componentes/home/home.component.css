@@ -1,0 +1,194 @@
+#divTotal {
+  background-color: #c6c6c6;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.header {
+  background-color: #c6c6c6;
+}
+
+.carousel-item img {
+  /* height: 800px;  */
+  filter: saturate(1.6);
+}
+
+.quienes-somos {
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.deco-div {
+  width: 45vh;
+  height: 60px;
+  background-color: #bf272c00;
+  border-radius: 50px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.proyectos-ejecutados {
+  background-color: #c6c6c6;
+  display: flex;
+  justify-content: center;
+}
+
+.imagenes { 
+  height: 600px; 
+  width: 100%;
+  background-repeat: no-repeat; 
+  text-align: center;
+  margin-bottom: 10px;
+  background-size: cover;
+}
+
+.otros-proyectos {
+  text-align: center;
+  margin-bottom: 10px;
+  height: 600px; 
+  width: 100%;
+}
+
+.boton {
+  background-color: #bf272d;
+  font-size: 28px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  width: 280px;
+  height: 60px;
+  text-align: center;
+}
+
+.contenido {
+  background-color: #333333;
+  color: white;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.5s ease-in-out;
+}
+
+.oculto {
+  height: 0;
+}
+
+.visible {
+  height: 1550px; 
+}
+
+@media (max-width: 767px) {
+  .carousel-item img {
+      height: 300px; 
+  }
+  .visible {
+    height: 4100px; 
+  }
+
+  /* .deco-div {
+    background-color: #bf272c00;
+  } */
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+  .carousel-item img {
+      height: 500px; 
+  }
+
+  .visible {
+    height: 2400px; 
+  }
+}
+
+@media (min-width: 993px) {
+  .carousel-item img {
+      height: 768px;
+  }
+
+  .visible {
+    height: 1550px; 
+  }
+}
+
+@media (min-width: 1440px) {
+.deco-div {
+    background-color: #bf272c;
+  }
+}
+
+@media (max-width: 1440) {
+  .carousel-item img {
+      height: 300px; 
+  }
+  .visible {
+    height: 4100px; 
+  }
+}
+
+#quienes-somos {
+  padding: 20px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 4rem;
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s;
+}
+
+.overlay.active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.description {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description.show {
+  opacity: 1;
+}
+
+.boton2:hover{
+  background-color: #bf272ca7;
+}
+
+.boton1:hover{
+  background-color: #c84e52;
+}
+button {
+  cursor: pointer; /* Asegúrate de que todos los botones tengan esta propiedad */
+}
+
+

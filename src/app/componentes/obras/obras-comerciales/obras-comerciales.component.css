@@ -1,0 +1,365 @@
+#divTotal {
+    height: auto;
+    width: 100%;
+}
+
+.header {
+    background-color: #c6c6c6;
+}
+
+.contenido {
+    background-color: #c6c6c6;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.contenido h1 {
+    left: 17%;
+    top: 10%;
+    position: absolute;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+.contenido .columna, 
+.page2 .columna,
+.page3 .columna,
+.page4 .columna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente los elementos */
+}
+
+.contenido .columna h5,
+.contenido .columna p {
+    text-align: right;
+    justify-content: center;
+    width: 480px;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.contenido .columna p + p {
+    margin-bottom: 0;
+}
+
+.deco-div {
+    width: 45vh;
+    height: 60px;
+    background-color: #bf272d;
+    border-radius: 50px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+
+.page2{
+    background-color: #333333;
+    height: 850px;
+    width: 100%;
+    position: relative;
+}
+
+.page2 .columna{
+    align-items: center;
+}
+
+.page2 .columna h5,
+.page2 .columna p{
+    text-align: left; 
+    justify-content: center;
+    width: 600px;
+    margin-bottom: 20px;
+    color: rgb(207, 207, 207);
+    font-family: "Poppins", sans-serif;
+}
+
+
+.page2 .columna p + p {
+    margin-bottom: 0; /* Asegurarse de que no haya margen entre <p> seguidos */
+}
+
+
+.page3{
+    background-color: #c6c6c6;
+    height: 850px;
+    width: 100%;
+    position: relative;
+}
+
+.page3 .columna h5,
+.page3 .columna p{
+    text-align: right; 
+    width: 600px;
+    margin-bottom: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.page3 .columna p{
+    font-size: 20px;
+}
+
+.page3 .columna h5 + p {
+    margin-bottom: 30px; /* Añadir margen superior al primer <p> que sigue un <h5> */
+}
+
+.page3 .columna p + p {
+    margin-bottom: 0; /* Asegurarse de que no haya margen entre <p> seguidos */
+}
+
+.page4{
+    background-color: #333333;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.page4 .columna h5,
+.page4 .columna p{
+    text-align: left; 
+    width: 500px;
+    margin-bottom: 30px;
+    color: rgb(207, 207, 207);
+    font-family: "Poppins", sans-serif;
+}
+
+.page4 .columna{
+    align-items: center;
+}
+
+.page4 .columna p + p{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+
+    .contenido, .page2, .page3, .page4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page2, .page3{
+        height: 600px; 
+    }
+
+    .contenido .div-deco,
+    .page3 .div-deco,
+    .page4 .div-deco{
+        overflow: hidden;
+    }
+
+    .contenido .row, .page2 .row, .page3 .row, .page4 .row {
+        width: 100%;
+    }
+
+    .contenido .row {
+        top: 100px;
+    }
+
+
+    .contenido h1 {
+        position: absolute;
+        left: auto;
+        font-size: 50px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .contenido .columna, .page2 .columna, .page3 .columna, .page4 .columna {
+        margin-bottom: 30px;
+        align-items: center; /* Centra horizontalmente los elementos */
+    }
+
+    .contenido .columna img, .page2 .columna img, .page3 .columna img, .page4 .columna img {
+        height: 350px;
+        width: 100%;
+    }
+
+    #carousel1, #carousel2, #carousel3{
+        height: 350px;
+        width: 100%;
+    }
+
+
+    .contenido .columna h5, .page2 .columna h5, .page3 .columna h5, .page4 .columna h5 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        left: auto;
+    }
+
+    .contenido .columna p, .page2 .columna p, .page3 .columna p, .page4 .columna p {
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+        left: auto;
+    }
+
+    .page4 .columna p + p{
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1700px) {
+
+    .contenido, .page2, .page3, .page4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenido{
+        height: 1000px;
+    }
+
+    .page2, .page3{
+        height: 600px; 
+    }
+
+
+
+    .page4{
+        height: 650px; 
+    }
+
+    .contenido .div-deco,
+    .page2 .div-deco,
+    .page3 .div-deco,
+    .page4 .div-deco{
+        overflow: hidden;
+    }
+
+    .contenido .row, .page2 .row, .page3 .row, .page4 .row {
+        width: 100%;
+    }
+
+    .contenido .row {
+        top: 150px;
+    }
+
+
+    .contenido h1 {
+        position: absolute;
+        left: auto;
+        font-size: 50px;
+        top: 250px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .contenido .columna, .page2 .columna,
+    .page3 .columna, .page4 .columna{
+        margin-bottom: 30px;
+        align-items: center; /* Centra horizontalmente los elementos */
+    }
+
+    .contenido .columna img, .page3 .columna img{
+        width: 500px;
+    }
+
+
+    .page4 .columna img{
+        width: 300px;
+    }
+
+    .contenido .columna img, .page2 .columna img
+    .page3 .columna img{
+        height: 350px;
+    }
+
+    .contenido .columna p,
+    .page2 .columna p{
+        width: 300px;
+    }
+
+    #carousel1, #carousel2, #carousel3{
+        width: 500px;
+    }
+
+
+
+    .contenido .columna h5, .page2 .columna h5,
+    .page3 .columna h5, .page4 .columna h5{
+        font-size: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+        text-align: center;
+        left: auto;
+    }
+
+    .contenido .columna p, .page2 .columna p,
+    .page3 .columna p, .page4 .columna p{
+        font-size: 10px;
+        text-align: center;
+        left: auto;
+    }
+
+    .contenido .columna h5{
+        width: 400px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1700px) {
+    .contenido .row {
+        display: flex;
+        top: 300px;
+    }
+
+    .page2 .row{
+        display: flex;
+        top: 100px;
+    }
+
+    .page3 .row{
+        display: flex;
+        top: 100px;
+    }
+
+    .page4 .row{
+        display: flex;
+        top: 100px;
+    }
+
+    .contenido .columna img,
+    .page2 .columna img,
+    .page3 .columna img,
+    .page4 .columna img{
+        height: 687px; 
+        width: 836px;
+    }
+
+    #carousel1, #carousel2, #carousel3{
+        height: 687px; 
+        width: 836px;
+    }
+
+    .contenido .columna h5, 
+    .page2 .columna h5,
+    .page3 .columna h5,
+    .page4 .columna h5{
+        font-size: 35px; 
+        margin-bottom: 40px; 
+        top: 100px;
+        
+    }
+
+    .contenido .columna p,
+    .page2 .columna p{
+        font-size: 20px;  
+    }
+}

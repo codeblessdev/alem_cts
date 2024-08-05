@@ -1,0 +1,256 @@
+<div id="divTotal">
+    <div id="home" class="header">
+        <img src="../../../assets/img/logotest.png" style="margin: 30px;">
+    </div>
+
+    <div id="carouselExample" class="carousel slide carousel-custom">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- Para móviles y tabletas -->
+          <div class="d-block d-lg-none">
+            <img src="../../../assets/Trabajos/slider1.jpg" class="d-block w-100">
+          </div>
+          <!-- Para pantallas medianas y grandes -->
+          <div class="d-none d-lg-flex">
+            <img src="../../../assets/Trabajos/slider1.jpg" class="d-block w-50">
+            <img src="../../../assets/Trabajos/slider2.jpg" class="d-block w-50">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- Para móviles y tabletas -->
+          <div class="d-block d-lg-none">
+            <img src="../../../assets/Trabajos/slider3.jpg" class="d-block w-100">
+          </div>
+          <!-- Para pantallas medianas y grandes -->
+          <div class="d-none d-lg-flex">
+            <img src="../../../assets/Trabajos/slider3.jpg" class="d-block w-50">
+            <img src="../../../assets/Trabajos/slider4.png" class="d-block w-50"> 
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!-- Para móviles y tabletas -->
+          <div class="d-block d-lg-none">
+            <img src="../../../assets/Trabajos/slider5.jpg" class="d-block w-100">
+          </div>
+          <!-- Para pantallas medianas y grandes -->
+          <div class="d-none d-lg-flex">
+            <img src="../../../assets/Trabajos/slider5.jpg" class="d-block w-50">
+            <img src="../../../assets/Trabajos/slider6.jpg" class="d-block w-50">
+          </div>
+        </div>
+      </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+      
+    
+    <div id="nosotros" style="height: auto; position: relative;">
+      <div class="deco-div" style="left: -40px; top: 10%;"></div>
+      <div id="quienes-somos" class="quienes-somos">
+        <div class="container" style="color: white; margin-top: 100px; margin-bottom: 100px;">
+          <div class="row">
+            <div class="col-md-6 columna" style="font-size: 20px;">
+                <h2 style="font-size: 4rem; margin-bottom: 80px; ">¿QUIENES SOMOS?</h2>
+                <p>ALEM CONSTRUCCIONES S.A. es una empresa
+                    dedicada a obras civiles e industriales de gran
+                    envergadura tanto en el campo privado como
+                    en el publico.
+                </p>
+                <p>Plantas industriales, escuelas, viviendas residenciales, bancos, viviendas y supermercados
+                    son las obras mas características, sumando
+                    gran cantidad de m2 de calidad y excelencia
+                    en todas sus trayectorias.
+                </p>
+            </div>
+            <div class="col-md-6 columna d-flex justify-content-center align-items-center" style="font-size: 20px;">
+                <img src="../../../assets/img/test.png" alt="" class="img-fluid" >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="deco-div" style="z-index: 1000; left: 90%; top: 70%;"></div>
+    </div>
+
+    <div id="proyectos" style="height: auto; position: relative;">
+      <div class="deco-div" style="left: -40px; top: 150px;"></div>
+      <div class="proyectos-ejecutados">
+        <div class="container d-flex justify-content-center align-items-center" style="color: #333333; height: 400px; position: relative;">
+          <h2 style="font-size: 3.6rem; text-align:center;">PROYECTOS EJECUTADOS</h2>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center proyectos">
+        <div class="imagenes proyectos" style="background-image: url(../../../assets/Trabajos/home/foto1.png);" (mouseenter)="onMouseEnter(1)" (mouseleave)="onMouseLeave(1)">
+          <div class="overlay d-flex justify-content-center align-items-center" [ngClass]="{'active': hoveredImage === 1}" *ngIf="mostrarDescripcion">
+            <div class="text-center description" style="width: 100%; top: 100%;" [ngClass]="{'show': hoveredImage === 1}" >
+              <h2 style="color: white; font-size: 40px;">{{descripcion}}</h2>
+              <button class="boton boton2" style="top: 4%; position: relative;" (click)="IrAObra()">Ver Más</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
+        <div class="imagenes proyectos" style="background-image: url(../../../assets/Trabajos/home/foto2.jpg);" (mouseenter)="onMouseEnter(2)" (mouseleave)="onMouseLeave(2)">
+          <div class="overlay d-flex justify-content-center align-items-center" [ngClass]="{'active': hoveredImage === 2}" *ngIf="mostrarDescripcion">
+            <div class="text-center description" style="width: 100%; top: 100%;" [ngClass]="{'show': hoveredImage === 2}" >
+              <h2 style="color: white; font-size: 40px;">{{descripcion}}</h2>
+              <button class="boton boton2" style="top: 4%; position: relative;" (click)="IrAObra()">Ver Más</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
+          <div class="imagenes proyectos" style="background-image: url(../../../assets/Trabajos/home/foto3.jpg);" (mouseenter)="onMouseEnter(3)" (mouseleave)="onMouseLeave(3)">
+            <div class="overlay d-flex justify-content-center align-items-center" [ngClass]="{'active': hoveredImage === 3}" *ngIf="mostrarDescripcion">
+              <div class="text-center description" style="width: 100%; top: 100%;" [ngClass]="{'show': hoveredImage === 3}" >
+                <h2 style="color: white; font-size: 40px;">{{descripcion}}</h2>
+                <button class="boton boton2" style="top: 4%; position: relative;" (click)="IrAObra()">Ver Más</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
+          <div class="imagenes proyectos" style="background-image: url(../../../assets/Trabajos/home/foto4.jpg);" (mouseenter)="onMouseEnter(4)" (mouseleave)="onMouseLeave(4)">
+            <div class="overlay d-flex justify-content-center align-items-center" [ngClass]="{'active': hoveredImage === 4}" *ngIf="mostrarDescripcion">
+              <div class="text-center description" style="width: 100%; top: 100%;" [ngClass]="{'show': hoveredImage === 4}" >
+                <h2 style="color: white; font-size: 40px;">{{descripcion}}</h2>
+                <button class="boton boton2" style="top: 4%; position: relative;" (click)="IrAObra()">Ver Más</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container d-flex justify-content-center align-items-center" style="height: 20vh">
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <button class="boton boton1" (click)="toggleTexto()" >OTROS</button>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <div>   
+      <div #contenido style="position: relative;" [ngClass]="{'visible': mostrarTexto, 'oculto': !mostrarTexto}" class="contenido">
+        <div class="deco-div" style="left: -40px; top: 40px;"></div>
+        <div class="deco-div" style="left: 90%; top: 180px;"></div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
+            <div class="otros-protectos">
+              <div class="container" style="font-size: 18px; top: 150px; position: relative;">
+                <ul style="list-style-type: none;">
+                  <li>COMPLEJO DE DUPLEX INMOB. CONSTANTINO – Irala y J.B.Justo – Quilmes</li>  
+                  <li>Obra Completa llave en mano .</li>
+                  <li>Movimiento de suelos. Estructura de hªAª - Albañilería – Cubiertas – Instalaciones</li>
+                  <li>eléctricas, gas, sanitarias, etc...</li>  
+                  <li>VIVIENDA FLIA.PAULOS – Pueyrredon 791 – Lomas de Zamora.</li>
+                  <li>Obra Completa llave en mano.</li>
+                  <li>Movimiento de suelos. Estructura de hªAª - Albañilería – Cubiertas – Instalaciones</li>
+                  <li>eléctricas, gas, sanitarias, etc...</li>
+                  <li>VIVIENDA FLIA. PATRONE – 9 de Julio y Chacabuco – Bernal.</li>
+                  <li>Refacción y ampliación.</li>
+                  <li>Refacción interior – Recambio de pisos existentes – Modificación de baños y</li>
+                  <li>cocina – Instalaciones eléctricas y sanitarias a nuevas – Parquizacion y Pintura</li>
+                  <li>total.</li>
+                  <li>VIVIENDA FLIA. FINAURI – Esquiu y Andrade – Quilmes O.</li>
+                  <li>Obra Completa llave en mano .</li>
+                  <li>Movimiento de suelos. Estructura de hªAª - Albañilería – Cubiertas – Instalaciones</li>
+                  <li>eléctricas, gas, sanitarias, etc...</li>
+                  <li>VIVIENDA FLIA. BROWNE – Lote 27 Bª Los Abedules – Ruta Panamericana.</li>
+                  <li>Obra Completa llave en mano .</li>
+                  <li>Movimiento de suelos. Estructura de hªAª - Albañilería – Cubiertas – Instalaciones</li>
+                  <li>eléctricas, gas, sanitarias, etc...</li>
+                  <li>VIVIENDA FLIA. STEFANI – Temperley.</li>
+                  <li>Obra Completa llave en mano .</li>
+                  <li>Movimiento de suelos. Estructura de hªAª - Albañilería – Cubiertas – Instalaciones</li>
+                  <li>eléctricas, gas, sanitarias, etc...</li>
+                  <li>--FAMILIA VILLAR – VICENTE LOPEZ</li>
+                  <li>Ampliación - Obra llave en mano con ingeniería incluida – Realizada en 90 días</li>
+                  <li>corridos - Finalizada en Mayo 2004</li>
+                  <li>-FAMILIA RAMOS – LA LUCILA</li>
+                  <li>Ampliación - Obra llave en mano con ingeniería incluida – Realizada en 120 días</li>
+                  <li>corridos - Finalizada en Agosto 2004</li>
+                  <li>-VIVIENDA FLIA. GELHORN – Irala 2974 – Quilmes O.</li>
+                  <li>Refacción y ampliación.</li>
+                  <li>Refacción a nuevo en etapas - Recambio de pisos existentes – Modificación de</li>
+                  <li>baños y cocina – Instalaciones eléctricas y sanitarias a nuevas – Parquizacion y</li>
+                  <li>Pintura total.</li>
+                  <li>- VIVIENDA FLIA. KERSEVAN – Ranelagh.</li>
+                  <li>Obra Completa llave en mano .</li>
+                  <li>Movimiento de suelos. Estructura de hªAª - Albañilería – Cubiertas – Instalaciones</li>
+                  <li>eléctricas, gas, sanitarias, etc...</li>
+                  <li>- VIVIENDA FLIA. SLAVAZZA – Calle 34 Nª 1233 – La Plata.</li>
+                  <li>Ampliación y Refacción. .</li>
+                  <li>Trabajos varios sobre la superficie existente y una pequeña ampliación..</li>
+                  <li>- COMPLEJO DE DUPLEX – Av. Eva Perón y 136 – Ranelagh..</li>
+                  <li>Obra Completa llave en mano .</li>
+                  <li>Movimiento de suelos. Estructura de hªAª - Albañilería – Cubiertas – Instalaciones</li>
+                  <li>eléctricas, gas, sanitarias, etc...</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center" style="top: 200px; position: relative;">
+          <div class="otros-protectos">
+            <div class="container" style="text-align: end; font-size: 18px;">
+              <ul style="list-style-type: none;">
+                <li>AIR LIQUIDE – Bahía Blanca</li>
+                <li>Estructuras Metálicas y de HªAª - Tabiqueria exterior termo paneles de</li>
+                <li>aluminio</li>
+                <li>- Albañilería -Instalaciones Sanitarias–Eléctricas -Aire Acondicionado –</li>
+                <li>Durlock</li>
+                <li>SHELL CAPSA – Av. Vergara y Bradley – Villa Tesei – Buenos Aires</li>
+                <li>Estructuras metálicas y de HªAª - Albañilería -Instalaciones Sanitarias–Eléctricas</li>
+                <li>Aire Acondicionado – Tabaquerías Exteriores en sistema IPS ( Durlock –</li>
+                <li>Poliestileno</li>
+                <li>expandido y Finish Coat ) – Pavimentos ferro cementados – Instalación</li>
+                <li>de</li>
+                <li>tanques de combustible.</li>
+                <li>A.C.A – Automóvil Club Argentino – Once</li>
+                <li>Techado de 4to piso ( anterior azotea ) 3500 m2 – Pavimento asfáltico</li>
+                <li>–Pintura</li>
+                <li>total de edificio – Instalación de incendio – Eléctrica – Sanitaria</li>
+                <li>YPF S.A YATAY Y DÍAZ VELEZ- CAPITAL FEDERALEstructura</li>
+                <li>de HªAª de caja edificada y Bunker de GNC- est. Metálica e imagen</li>
+                <li>corporativa en Alucobond – Albañilería – Instalaciones Sanitarias- Eléctricas- Aire</li>
+                <li>AcondicionadoYPF S.A – Ovidio Lagos y 3 de Febrero – Rosario</li>
+                <li>Estructuras de HªAª - Albañilería -Instalaciones Sanitarias–Eléctricas -</li>
+                <li>Aire Acondicionado</li>
+                <li>– Durlock – Instalación de tanques de combustible con cañería flexible</li>
+                <li>doble pared y sistema de detección de perdidas de combustible. Est. Metálica</li>
+                <li>e Imagen .</li>
+                <li>SHELL CAPSA – Estación de Servicio Ruta 12 y 198 – Zarate</li>
+                <li>Colocación de tanques de deposito de gas envasado de gran volumen</li>
+                <li>para</li>
+                <li>alimentar entre otros el grupo generador de energía eléctrica. Plateas de</li>
+                <li>HªAª -</li>
+                <li>Tendidos de cañerías de gas para alimentar generador y alimentación al</li>
+                <li>sector</li>
+                <li>de Parrilla – Cubierta metálica de deposito.</li>
+                <li>SHELL CAPSA – Estación de Servicio Ruta 12 y 198 – Zarate</li>
+                <li>Construcción de Parrilla completa incluyendo equipamiento fijo, cubierta,</li>
+                <li>pisos</li>
+                <li>, instalaciones eléctricas, aire acondicionado, sanitarias, etc..</li>
+                <li>SHELL CAPSA – Estación de Servicio Av. Vergara y Bradley - Hurlingam</li>
+                <li>Movimiento de suelos – Pavimentos – Colocación de tanques de combustible e</li>
+                <li>instalación – Relleno y compactación – Instalación eléctrica – Aire Acondicionado</li>
+                <li>– Instalación sanitaria – Montaje de sistema de incendio con bombas</li>
+                <li>jockey</li>
+                <li>e hidrantes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="deco-div" style="left: -40px; top: 1450px;"></div>
+    </div>
+    
+</div>
+</div>

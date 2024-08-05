@@ -1,0 +1,326 @@
+#divTotal {
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    background-color: #c6c6c6;
+}
+
+.page1 .columna, 
+.page2 .columna,
+.page3 .columna{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente los elementos */
+}
+
+.page1{
+    background-color: #333333;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.page1 h1{
+    left: 17%;
+    top: 14%;
+    position: absolute;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(207, 207, 207);
+    font-family: "Poppins", sans-serif;
+}
+
+.page1 .columna h5,
+.page1 .columna p{
+    text-align: right; 
+    width: 500px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(207, 207, 207);
+}
+
+.page1 .columna p {
+    margin-bottom: 0; /* Asegurarse de que no haya margen entre <p> seguidos */
+}
+
+.deco-div {
+    width: 45vh;
+    height: 60px;
+    background-color: #bf272d;
+    border-radius: 50px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.page2{
+    background-color: #c6c6c6;
+    height: 850px;
+    width: 100%;
+    position: relative;
+}
+
+.page2 .columna h5,
+.page2 .columna p{
+    text-align: left;
+    width: 600px;
+    margin-bottom: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.page2 .columna p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.page2 .columna p + p{
+    margin-bottom: 10px;
+}
+
+.page3{
+    background-color: #333333;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.page3 h1{
+    left: 17%;
+    top: 14%;
+    position: absolute;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgb(207, 207, 207);
+    font-family: "Poppins", sans-serif;
+}
+
+.page3 .columna h5,
+.page3 .columna p{
+    text-align: right; 
+    width: 700px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(207, 207, 207);
+}
+
+.page3 .columna p {
+    margin-bottom: 0; /* Asegurarse de que no haya margen entre <p> seguidos */
+}
+
+@media (max-width: 900px) {
+
+    .page1, .page2, .page3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page2, .page3{
+        height: 600px; 
+    }
+
+    .page1 .div-deco,
+    .page2 .div-deco,
+    .page3 .div-deco{
+        overflow: hidden;
+    }
+
+    .page1 .row, .page2 .row, .page3 .row{
+        width: 100%;
+    }
+
+    .page1 .row {
+        top: 150px;
+    }
+
+
+    .page1 h1 {
+        position: absolute;
+        left: auto;
+        font-size: 50px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .page1 .columna, .page2 .columna, .page3 .columna{
+        margin-bottom: 30px;
+        align-items: center; /* Centra horizontalmente los elementos */
+    }
+
+    .page1 .columna img, .page2 .columna img, .page3 .columna img{
+        height: 350px;
+        width: 100%;
+    }
+
+    #carousel1, #carousel2, #carousel3{
+        height: 350px;
+        width: 100%;
+    }
+
+
+    .page1 .columna h5, .page2 .columna h5, .page3 .columna h5{
+        font-size: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        left: auto;
+    }
+
+    .page1 .columna p, .page2 .columna p, .page3 .columna p {
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+        left: auto;
+    }
+
+}
+
+@media (min-width: 900px) and (max-width: 1700px) {
+
+    .page1, .page2, .page3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page1{
+        height: 800px; 
+    }
+
+    .page2, .page3{
+        height: 600px; 
+    }
+
+
+    .page1 .div-deco,
+    .page2 .div-deco,
+    .page3 .div-deco{
+        overflow: hidden;
+    }
+
+    .page1 .row, .page2 .row, .page3 .row{
+        width: 100%;
+    }
+
+    .page1 .row {
+        top: 150px;
+    }
+
+
+    .page1 h1 {
+        position: absolute;
+        left: auto;
+        font-size: 50px;
+        top: 250px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .page1 .columna, .page2 .columna,
+    .page3 .columna{
+        margin-bottom: 30px;
+        align-items: center; /* Centra horizontalmente los elementos */
+    }
+
+    .page1 .columna img, .page3 .columna img{
+        width: 500px;
+    }
+
+
+    .page1 .columna img, .page2 .columna img,
+    .page3 .columna img{
+        height: 350px;
+    }
+
+    #carousel1, #carousel3{
+        width: 500px;
+    } 
+
+    #carousel1, #carousel2, #carousel3{
+        height: 350px;
+    }
+
+    .page1 .columna p,
+    .page2 .columna p{
+        width: 300px;
+    }
+
+
+
+    .page1 .columna h5, .page2 .columna h5,
+    .page3 .columna h5{
+        font-size: 20px;
+        margin-bottom: 20px;
+        width: 300px;
+        text-align: center;
+        left: auto;
+    }
+
+    .page1 .columna p, .page2 .columna p,
+    .page3 .columna p{
+        font-size: 10px;
+        text-align: center;
+        left: auto;
+    }
+
+    .page2 .columna h5{
+        width: 400px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1700px) {
+    .page1 .row {
+        display: flex;
+        top: 300px;
+    }
+
+    .page2 .row{
+        display: flex;
+        top: 100px;
+    }
+
+    .page3 .row{
+        display: flex;
+        top: 100px;
+    }
+
+
+    .page1 .columna img,
+    .page2 .columna img,
+    .page3 .columna img{
+        height: 687px; 
+        width: 836px;
+    }
+
+    #carousel1, #carousel2, #carousel3{
+        height: 687px; 
+        width: 836px;
+    }
+
+    .page1 .columna h5, 
+    .page2 .columna h5,
+    .page3 .columna h5{
+        font-size: 35px; 
+        margin-bottom: 40px; 
+        top: 100px;
+        
+    }
+
+    .page2 .columna{
+        align-items: center;
+    }
+
+    .page3 .columna h5, p{
+        text-align: right;
+    }
+
+    .page1 .columna p,
+    .page2 .columna p{
+        font-size: 20px;  
+    }
+}

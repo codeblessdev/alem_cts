@@ -1,0 +1,85 @@
+.floating-nav {
+  position: fixed;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  z-index: 1000;
+  height: 60px;
+  transition: top 0.3s ease-in-out;
+}
+
+.custom-navbar {
+  background-color: #bf272d; /* Color de fondo personalizado */
+}
+
+.custom-navbar .nav-link {
+  color: white; /* Color de los enlaces */
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffcc00; /* Color de los enlaces al pasar el mouse */
+}
+
+.custom-navbar .navbar-brand {
+  color: white; /* Color de la marca */
+}
+
+.opciones {
+  font-size: 3vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+.navbar-scrolled {
+  top: 2vh !important;
+}
+
+
+.custom-navbar-collapse {
+  background-color: #bf272c97;
+  border-radius: 20px;
+  /* overflow: hidden; */
+  transition: height 0.5s ease-in-out;;
+  position: relative;
+  height: 60px;
+}
+
+.custom-navbar-collapse.show {
+  height: auto;
+}
+
+.navbar-nav .nav-link {
+  color: rgb(255, 255, 255); /* Cambia el color del texto al que prefieras */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8d92e; /* Cambia el color del texto al pasar el ratón */
+}
+
+/* navbar.component.css */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #bf272c97;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.711);
+  z-index: 1;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-item:hover{
+  background-color: #f86b2e00;
+  color: #f8d92e !important;
+}
+
+.dropdown-menu .dropdown-item:active,
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:visited {
+  background-color: transparent !important;
+}
